@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "turtorial-mod",
+	"version": "${version}",
+	"name": "Turtorial Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"bigcc218"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/turtorial-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "top.bigcc218.TurtorialMod"
+		],
+		"client": [
+			"top.bigcc218.TurtorialModClient"
+		],
+		"fabric-datagen": [
+			"top.bigcc218.TurtorialModDataGenerator"
+		]
+	},
+	"mixins": [
+		"turtorial-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
